@@ -2,8 +2,9 @@
 /**
 * main - Entry point :the place where i start my program
 *
-* Description: writing a program that prints the size of various types on the computer
-* 
+* Description: writing a program that
+* prints the size of various types on the computer
+*
 * Return: 0 (Success)
 */
 int main(void)
