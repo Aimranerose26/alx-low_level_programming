@@ -1,14 +1,14 @@
 #include <stdio.h>
 /**
-* main - entery
-* Description: prints alphabets in lower case
-* Return: (0) if successful
+*main - entery
+*Description: prints alphabets in lower case
+*Return: (0) if successful
 */
 int main(void)
 {
 	char alphabet;
 	
-	alphabet ='a';
+	alphabet = 'a';
 
 	while (alphabet <= 'z')
 	{
