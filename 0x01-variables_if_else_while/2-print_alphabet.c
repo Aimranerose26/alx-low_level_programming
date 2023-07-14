@@ -2,12 +2,12 @@
 /**
 *main - entery
 *Description: prints alphabets in lower case
-*Return: (0) if successful
+*Return:Always if successful
 */
 int main(void)
 {
 	char alphabet;
-	
+
 	alphabet = 'a';
 
 	while (alphabet <= 'z')
@@ -16,5 +16,6 @@ int main(void)
 		alphabet++;
 	}
 	putchar('\n');
+
 	return (0);
 }
