@@ -1,40 +1,50 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
- * print_to_98 - a function that prints all natural numbers from n to 98
- * user input's number prints to 98, regardless < 98 or > 98
- * @n: number input
- * Return: Always 0 (Success)
+ * print_times_table - print multiplication table up to n
+ * @n: integer argument
  */
-void print_to_98(int n)
+
+void print_times_table(int n)
 {
-	if (n < 98)
+	int row;
+	int column;
+	int product;
+
+	if (n >= 0 && n <= 15)
 	{
-		while (n <= 98)
+		for (row = 0; row <= n; row++)
 		{
-			printf("%d", n);
-			if (n != 98)
+			for (column = 0; column <= n; column++)
 			{
-				printf(", ");
+				product = (row * column);
+				if (column == 0)
+					_putchar('0' + product);
+				else
+				{
+					_putchar(',');
+					_putchar(' ');
+					if (product <= 9)
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar('0' + product);
+					}
+					else if (product > 9 && product < 100)
+					{
+						_putchar(' ');
+						_putchar('0' + (product / 10));
+						_putchar('0' + (product % 10));
+					}
+					else if (product >= 100)
+					{
+						_putchar('0' + (product / 100));
+						_putchar('0' + ((product / 10) % 10));
+						_putchar('0' + (product % 10));
+					}
+				}
 			}
-			n++;
+			_putchar('\n');
 		}
 	}
-	else if (n > 98)
-	{
-		while (n >= 98)
-		{
-			printf("%d", n);
-			if (n != 98)
-			{
-				printf(", ");
-			}
-			n--;
-		}
-	}
-	else
-	{
-		printf("98");
-	}
-	printf("\n");
 }
