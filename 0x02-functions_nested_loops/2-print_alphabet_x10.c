@@ -8,18 +8,18 @@
 
 int main(void)
 {
-	int alph, or;
+	int alph, o;
 
 	alph = 0;
 
 	while (alph < 10)
 	{
 		alph++
-			for (or = 'a' ; or <= 'z' ; or++)
+			for (o = 'a' ; o <= 'z' ; o++)
 			{
-				_putchar(or);
+				_putchar(o);
 			}
-		or++
+		o++
 		_putchar('\n');
 	}
 }
