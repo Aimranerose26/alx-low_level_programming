@@ -1,25 +1,22 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- * main - entry
- *Description: writing function that prints 10 times the alphabet.
- *Return: (0) success
- */
-
+* print_alphabet_x10 - a function that prints 10 times the alphabet
+* Return: return always 0.
+*/
 void print_alphabet_x10(void)
 {
-	int alph, o;
+	int co;
+	char n;
 
-	alph = 0;
+	co = 0;
 
-	while (alph < 10)
+	while (co < 10)
 	{
-		alph++;
-			for (o = 'a' ; o <= 'z' ; o++)
-			{
-				_putchar(alph);
-			}
-		o++;
+		for (n = 'a'; n <= 'z'; n++)
+		{
+			_putchar(n);
+		}
+		co++;
 		_putchar('\n');
 	}
 }
