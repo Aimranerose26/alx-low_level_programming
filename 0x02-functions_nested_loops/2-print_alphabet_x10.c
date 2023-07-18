@@ -6,7 +6,7 @@
  *Return: (0) success
  */
 
-int main(void)
+void print_alphabet_x10(void)
 {
 	int alph, o;
 
@@ -14,12 +14,12 @@ int main(void)
 
 	while (alph < 10)
 	{
-		alph++
+		alph++;
 			for (o = 'a' ; o <= 'z' ; o++)
 			{
-				_putchar(o);
+				_putchar(alph);
 			}
-		o++
+		o++;
 		_putchar('\n');
 	}
 }
